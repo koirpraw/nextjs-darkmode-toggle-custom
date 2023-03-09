@@ -3,3 +3,9 @@
 
 - dark and light theming using Emotion(@emotion/styled @emotion/react)
 - Persisting theme using localStorage
+
+<table>
+<tr>
+<td></td>
+</tr>
+</table>
