@@ -1,4 +1,4 @@
-
+import {Grid} from "@nextui-org/react"
 import styled from "@emotion/styled";
 import { useEffect, useState } from "react";
 
@@ -47,11 +47,20 @@ useEffect(()=>{
 },[activeTheme]);
 
   return (
-    <ToggleButton type="button" onClick={()=>setActiveTheme(inactiveTheme)}>
+    
+
+   <Grid.Container gap={2} justify="center" display="flex" direction="Row">
+    <Grid.Container  display="flex" direction="Column">
+    <h3>Current Theme:- {activeTheme}</h3>
+   <ToggleButton type="button" onClick={()=>setActiveTheme(inactiveTheme)}>
       <ToggleThumb activeTheme={activeTheme}/>
       <span>🌙</span>
       <span>☀️</span>
     </ToggleButton>
+  </Grid.Container>
+  </Grid.Container>
+
+
   );
 
 };
