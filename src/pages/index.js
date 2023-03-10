@@ -7,7 +7,7 @@ import {Switch,Spacer,Link} from '@nextui-org/react'
 import MyNavBar from '@/components/MyNavbar'
 
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -19,11 +19,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
    
-      <main className={styles.main}>
+      <main 
+      className={styles.main}
+      >
         <div>
         <h1>App Themes - Light & Dark</h1>
         <code> Toggle switch to change theme.</code>
-        <ThemeToggle />
+        <ThemeToggle/> 
         <h3>This is an example of light theme and dark theme implementaion in NextJS using : </h3>
         <ul>
           <li><Link href="https://nextjs.org/">NextJS</Link></li>
